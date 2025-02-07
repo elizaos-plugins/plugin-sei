@@ -19,7 +19,6 @@
         "dist"
     ],
     "dependencies": {
-        "@elizaos/core": "workspace:*",
         "node-cache": "5.1.2",
         "tsup": "8.3.5",
         "vitest": "2.1.9"
