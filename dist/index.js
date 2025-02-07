@@ -141,7 +141,7 @@ var WalletProvider = class {
   };
   static genSeiChainFromName(chainName, customRpcUrl) {
     const baseChain = seiChains[chainName];
-    if (!baseChain?.id) {
+    if (!(baseChain == null ? void 0 : baseChain.id)) {
       throw new Error("Invalid chain name");
     }
     const seiChain = customRpcUrl ? {
@@ -189,7 +189,7 @@ var evmWalletProvider = {
       const address = walletProvider.getAddress();
       const balance = await walletProvider.getWalletBalance();
       const chain = walletProvider.getCurrentChain().chain;
-      const agentName = state?.agentName || "The agent";
+      const agentName = (state == null ? void 0 : state.agentName) || "The agent";
       return `${agentName}'s Sei Wallet Address: ${address}
 Balance: ${balance} ${chain.nativeCurrency.symbol}
 Chain ID: ${chain.id}, Name: ${chain.name}`;
