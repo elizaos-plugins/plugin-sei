@@ -21,7 +21,8 @@
     "dependencies": {
         "node-cache": "5.1.2",
         "tsup": "8.3.5",
-        "vitest": "2.1.9"
+        "vitest": "2.1.9",
+        "viem": "2.22.23"
     },
     "scripts": {
         "build": "tsup --format esm --dts",
