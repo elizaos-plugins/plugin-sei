@@ -1,13 +1,7 @@
 {
     "compilerOptions": {
         "outDir": "dist",
-        "rootDir": "./src",
-        "typeRoots": [
-            "./node_modules/@types",
-            "./src/types"
-        ],
-        "declaration": true,
-        "strictNullChecks": true,
+        "rootDir": "src",
         "lib": ["ESNext", "dom"],
         "module": "Preserve",
         "moduleResolution": "Bundler",
@@ -16,6 +10,7 @@
         "skipLibCheck": true,
         "forceConsistentCasingInFileNames": false,
         "allowImportingTsExtensions": true,
+        "declaration": true,
         "emitDeclarationOnly": true,
         "resolveJsonModule": true,
         "noImplicitAny": false,
@@ -25,7 +20,5 @@
         "moduleDetection": "force",
         "allowArbitraryExtensions": true
     },
-    "include": [
-        "src"
-    ]
+    "include": ["src/**/*.ts"]
 }
